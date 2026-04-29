@@ -4,49 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tommaso De Tommaso | Portfolio</title>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 0 20px;
-            background-color: #fff;
-        }
-        h1, h2 { border-bottom: 1px solid #eaecef; padding-bottom: 0.3em; }
-        a { color: #0366d6; text-decoration: none; }
-        a:hover { text-decoration: underline; }
-        ul { padding-left: 20px; }
-        .contact-info { color: #586069; }
-    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <h1>Tommaso De Tommaso</h1>
-    <p class="contact-info">
-        <strong>Computer Science Student @ University of Bologna</strong><br>
-        <a href="mailto:tommaso.detommaso@protonmail.com">Email</a> | 
-        <a href="https://github.com/marmottatonante">GitHub</a> | 
-        <a href="/thoughts/">Thoughts</a>
-    </p>
+<body class="bg-slate-50 text-slate-900 font-sans selection:bg-blue-100">
+    <div class="max-w-4xl mx-auto py-16 px-8">
+        <header class="text-center mb-16">
+            <h1 class="text-5xl font-bold tracking-tight text-slate-900 mb-3">Tommaso De Tommaso</h1>
+            <p class="text-xl text-slate-600 mb-6 font-light">Computer Science Student @ University of Bologna</p>
+            <div class="flex justify-center gap-6 font-medium text-blue-600 mb-10">
+                <a href="https://github.com/marmottatonante" class="hover:underline text-sm">GitHub</a>
+                <a href="mailto:tommaso.detommaso@protonmail.com" class="hover:underline text-sm">Email</a>
+            </div>
+            <div class="max-w-2xl mx-auto mb-10">
+                <div class="flex flex-wrap justify-center gap-2">
+                    <span class="px-3 py-1 bg-white border border-slate-200 rounded-md text-xs font-medium shadow-sm">C</span>
+                    <span class="px-3 py-1 bg-white border border-slate-200 rounded-md text-xs font-medium shadow-sm">C++</span>
+                    <span class="px-3 py-1 bg-white border border-slate-200 rounded-md text-xs font-medium shadow-sm">C#</span>
+                    <span class="px-3 py-1 bg-white border border-slate-200 rounded-md text-xs font-medium shadow-sm">Java</span>
+                    <span class="px-3 py-1 bg-white border border-slate-200 rounded-md text-xs font-medium shadow-sm">Git</span>
+                    <span class="px-3 py-1 bg-white border border-slate-200 rounded-md text-xs font-medium shadow-sm">Docker</span>
+                    <span class="px-3 py-1 bg-white border border-slate-200 rounded-md text-xs font-medium shadow-sm">Linux</span>
+                </div>
+            </div>
+            <div class="max-w-2xl mx-auto">
+                <p class="text-slate-700 text-lg leading-relaxed">
+                    I'm constantly finding ways to mix <strong>computer science</strong> and <strong>art</strong>.
+                    I'm a <strong>fast learner</strong> and I'm also <strong>very curious</strong>.
+                    I speak <strong>Italian</strong> natively, but I speak <strong>English</strong> as well.
+                </p>
+            </div>
+        </header>
+        <hr class="border-slate-200 mb-16">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+            <section>
+                <h2 class="text-xs uppercase tracking-widest text-slate-400 font-semibold mb-8">Journey</h2>
+                <div class="relative border-l border-slate-200 ml-3 space-y-8">
 
-    <h2>Skills</h2>
-    <ul>
-        <li><strong>Languages:</strong> C, C++, C#, Java</li>
-        <li><strong>Tools:</strong> Git, VS Code, Docker, Linux</li>
-    </ul>
+                    <div class="relative pl-8">
+                        <div class="absolute w-3 h-3 bg-blue-600 rounded-full -left-[6.5px] top-1.5 border border-white"></div>
+                        <time class="text-xs font-mono text-slate-400">2022 — Present</time>
+                        <h3 class="text-sm font-bold text-slate-900 leading-none">BSc in Computer Science</h3>
+                        <p class="text-sm text-slate-600 mt-1">University of Bologna</p>
+                    </div>
 
-    <h2>Education</h2>
-    <p>
-        <strong>Bachelor of Science in Computer Science</strong><br>
-        <em>University of Bologna | Expected Graduation in 2027</em>
-    </p>
+                    <div class="relative pl-8">
+                        <div class="absolute w-3 h-3 bg-slate-300 rounded-full -left-[6.5px] top-1.5 border border-white"></div>
+                        <time class="text-xs font-mono text-slate-400">2017 — 2022</time>
+                        <h3 class="text-sm font-bold text-slate-900 leading-none">High School Diploma</h3>
+                        <p class="text-sm text-slate-600 mt-1">ITTS "Belluzzi - da Vinci"</p>
+                    </div>
 
-    <h2>Languages</h2>
-    <ul>
-        <li><strong>Italian:</strong> Native</li>
-        <li><strong>English:</strong> C1</li>
-    </ul>
+                    <div class="relative pl-8">
+                        <div class="absolute w-3 h-3 bg-slate-300 rounded-full -left-[6.5px] top-1.5 border border-white"></div>
+                        <time class="text-xs font-mono text-slate-400">2003</time>
+                        <h3 class="text-sm font-bold text-slate-900 leading-none">Hello, World!</h3>
+                        <p class="text-sm text-slate-600 mt-1">I was born in this year.</p>
+                    </div>
 
+                </div>
+            </section>
+            <section class="space-y-8">
+                <h2 class="text-xs uppercase tracking-widest text-slate-400 font-semibold mb-2">Creations</h2>
+
+                <a href="https://github.com/marmottatonante/Fastyphanty" target="_blank" rel="noopener noreferrer" class="block group pb-4 transition-all">
+                    <h3 class="text-sm font-bold text-slate-900 group-hover:text-blue-600 transition-colors">Fastyphanty</h3>
+                    <p class="text-sm text-slate-600 mt-1">A small game made in Unity and C# just like Hill Climb Racing, but with a helephant as protagonist!</p>
+                </a>
+
+                <a href="https://github.com/marmottatonante/ObjectOnePiece" target="_blank" rel="noopener noreferrer" class="block group pb-4 transition-all">
+                    <h3 class="text-sm font-bold text-slate-900 group-hover:text-blue-600 transition-colors">ObjectOnePiece</h3>
+                    <p class="text-sm text-slate-600 mt-1">A small game made completely in Java about One Piece.</p>
+                </a>
+
+            </section>
+        </div>
+        <footer class="mt-24 pt-8 border-t border-slate-200 text-slate-400 text-xs text-center">
+            &copy; 2026 Tommaso De Tommaso &bull; Built with Tailwind & Plain HTML
+        </footer>
+    </div>
 </body>
 </html>
